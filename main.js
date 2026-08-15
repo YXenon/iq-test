@@ -65,13 +65,22 @@ const moveBtnInterval = setInterval(()=>{
   moveButton()
 }, 500)
 
+let counter = 0;
+const texts = ["NAWWWH", "UWU", "WHY", "U SURE :(", "PLS :(", "UM? :(", "OK :/"];
 whiteBtn.addEventListener("click", () => {
-  whiteBtn.style.background = "#33FF06";
-  whiteBtn.style.boxShadow = "0 0 50px 0 #33FF06";
-  setBtnPos(btnX, btnY);
-  clearInterval(epilepsyInterval);
-  clearInterval(moveBtnInterval);
-  audioControl.pause()
+  if (counter<texts.length){
+    whiteBtn.innerText = texts[counter];
+  }
+  else if (counter==texts.length){
+    whiteBtn.style.background = "#33FF06";
+    whiteBtn.style.boxShadow = "0 0 50px 0 #33FF06";
+    setBtnPos(btnX, btnY);
+    clearInterval(epilepsyInterval);
+    clearInterval(moveBtnInterval);
+    audioControl.pause();
+    whiteBtn.innerText = "OK :/"
+  }
+  counter+=1;
 });
 
 function openFullscreen(element) {
