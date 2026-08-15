@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100dvh;
+  width: 100dvw;
+}
+body {
+  background: #000000;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial;
+  font-weight: 500;
+  color: #fff;
+}
+
+a {
+  color: #06FFE5;
+}
+
+#box {
+  height: 95%;
+  width: 95%;
+  display: none;
+}
+
+#objectj {
+  position: absolute;
+  background: white;
+  height: 70px;
+  width: 140px;
+  color: #000;
+  transition: top cubic-bezier(.5,-0.24,0,1.17) 0.2s, left cubic-bezier(.5,-0.24,0,1.17) 0.2s;
+  cursor: default;
+  font-weight: 800;
+}
+
+#position {
+  color: white;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#instruction {
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  font-size: x-large;
+}
