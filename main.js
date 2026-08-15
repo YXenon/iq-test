@@ -61,9 +61,10 @@ const epilepsyInterval = setInterval(()=>{
   epilepsy();
 }, 10);
 
+const frequency = window.innerWidth <= 768 ? 200 : 500
 const moveBtnInterval = setInterval(()=>{
   moveButton()
-}, 500)
+}, frequency)
 
 let counter = 0;
 const texts = ["NAWWWH", "UWU", "WHY", "U SURE :(", "PLS :(", "UM? :(", "OK :/"];
