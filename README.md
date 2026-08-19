@@ -1,3 +1,3 @@
 # IQ TEST
 
-Not really iq test, don't get fooled.
+Not really an IQ test, don't get fooled.
